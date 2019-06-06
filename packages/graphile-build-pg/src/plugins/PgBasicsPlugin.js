@@ -634,7 +634,7 @@ export default (function PgBasicsPlugin(
             _table: PgClass
           ) {
             return proc.tags.fieldName
-              ? proc.tags.fieldName + "List"
+              ? proc.tags.fieldName
               : this.camelCase(`${pseudoColumnName}-list`);
           },
           singleRelationByKeys(
